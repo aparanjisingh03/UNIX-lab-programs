@@ -1,0 +1,7 @@
+if [ $# -ne 2 ]
+then
+echo "invalid no.of arguments"
+exit
+fi
+pwr=`echo $1^$2 |bc`
+echo "$1 raises to $2 is:$pwr"
