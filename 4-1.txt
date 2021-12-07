@@ -1,0 +1,12 @@
+echo "enter a file name:"
+read file
+if [ -f $file ]
+then
+echo "yes it is a file"
+elif [ -d $file ]
+then
+echo "yes it is a directory"
+else
+echo "name not in the list"
+fi
+
